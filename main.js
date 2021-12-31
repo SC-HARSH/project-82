@@ -36,7 +36,7 @@ function my_mousemove(e){
     if (Eventname == "mousedown"){
         ctx.beginPath();
         ctx.strokeStyle = color;
-        ctx.lineWidth = width;
+        ctx.arcWidth = width;
         ctx.arc(currentcoordx, currentcoordy, radius ,0 , 2*Math.PI);
         ctx.stroke();
     };
