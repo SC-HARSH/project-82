@@ -10,7 +10,7 @@ canvas.addEventListener("mousedown", my_mousedown);
 
 function my_mousedown(e){
     color = document.getElementById("color").value;
-    width = document.getElementById("width".value);
+    width = document.getElementById("width").value;
     radius = document.getElementById("radius").value;
     Eventname = "mousedown";
 }
@@ -36,7 +36,7 @@ function my_mousemove(e){
     if (Eventname == "mousedown"){
         ctx.beginPath();
         ctx.strokeStyle = color;
-        ctx.arcWidth = width;
+        ctx.lineWidth = width;
         ctx.arc(currentcoordx, currentcoordy, radius ,0 , 2*Math.PI);
         ctx.stroke();
     };
